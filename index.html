@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCG Ecosystem Journey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .step:hover {
+            transform: scale(1.05);
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .phone-call {
+            background-image: url('https://via.placeholder.com/50?text=Call');
+        }
+
+        .meeting {
+            background-image: url('https://via.placeholder.com/50?text=Meet');
+        }
+
+        .contract {
+            background-image: url('https://via.placeholder.com/50?text=Contract');
+        }
+
+        .handshake {
+            background-image: url('https://via.placeholder.com/50?text=Handshake');
+        }
+
+        .ecosystem {
+            background-image: url('https://via.placeholder.com/50?text=Ecosystem');
+        }
+
+        .cleaning {
+            background-image: url('https://via.placeholder.com/50?text=Cleaning');
+        }
+
+        .checkpoints {
+            background-image: url('https://via.placeholder.com/50?text=Checkpoints');
+        }
+
+        p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Animation for each step */
+        .step {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideIn 0.5s forwards;
+        }
+
+        .step:nth-child(1) { animation-delay: 0.2s; }
+        .step:nth-child(2) { animation-delay: 0.4s; }
+        .step:nth-child(3) { animation-delay: 0.6s; }
+        .step:nth-child(4) { animation-delay: 0.8s; }
+        .step:nth-child(5) { animation-delay: 1s; }
+        .step:nth-child(6) { animation-delay: 1.2s; }
+        .step:nth-child(7) { animation-delay: 1.4s; }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="step">
+            <div class="icon phone-call"></div>
+            <p>Phone Call / Email</p>
+        </div>
+        <div class="step">
+            <div class="icon meeting"></div>
+            <p>On-site Meeting</p>
+        </div>
+        <div class="step">
+            <div class="icon contract"></div>
+            <p>Contract Signing</p>
+        </div>
+        <div class="step">
+            <div class="icon handshake"></div>
+            <p>Handshake</p>
+        </div>
+        <div class="step">
+            <div class="icon ecosystem"></div>
+            <p>Part of the Ecosystem</p>
+        </div>
+        <div class="step">
+            <div class="icon cleaning"></div>
+            <p>Begin Cleaning</p>
+        </div>
+        <div class="step">
+            <div class="icon checkpoints"></div>
+            <p>60/90 Day Checkpoints</p>
+        </div>
+    </div>
+
+    <script>
+    </script>
+</body>
+</html>
